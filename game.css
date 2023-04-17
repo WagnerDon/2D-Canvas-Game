@@ -1,0 +1,130 @@
+* {
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/PRE_ORIG_SIZE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: default;
+}
+
+body::backdrop {
+    background-color: transparent;
+}
+
+canvas {
+    border: solid 3px rgba(255, 255, 255, 0.25);
+}
+
+.d-none {
+    display: none;
+}
+
+.restart {
+    translate: -44vw 50vh;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 5px;
+    right: 50px;
+    gap: 10px;
+}
+
+.p {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: larger;
+    border-radius: 30px;
+    transition: all 125ms ease-in-out;
+    border-color: white;
+}
+
+button:hover {
+    background-color: #0fff4f;
+    border-radius: 0;
+}
+
+span {
+    color: red;
+    text-decoration: underline;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.font {
+    font-size: larger;
+}
+
+.dflex-sb-ac {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c {
+    flex-direction: column;
+}
+
+.colorBorder {
+    border-color: red !important;
+}
+
+.color {
+    color: red !important;
+}
+
+.cont {
+    min-height: 75px;
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    right: 50px;
+    font-size: xxx-large;
+}
+
+@media (max-width:1080px) {
+    .mobile {
+        display: flex;
+    }
+}
